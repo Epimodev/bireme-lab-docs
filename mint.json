@@ -5,81 +5,101 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#FFC799",
+    "light": "#FFC799",
+    "dark": "#FFC799",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#33281F",
+      "to": "#33281F"
+    },
+    "background": {
+      "light": "#0E0E0E",
+      "dark": "#0E0E0E"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Besoin d'aide ?",
+      "url": "mailto:support@bireme.io"
     }
   ],
+  "versions": ["v1.0"],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Rejoindre la bêta",
+    "url": "https://bireme.io"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Dédale",
+      "url": "dedale"
     }
   ],
+  "primaryTab": {
+    "name": "Accueil"
+  },
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "introduction"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Mises à jour",
+      "icon": "megaphone",
+      "url": "changelog"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://bireme.io"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Documentation",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Ressources",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "ressources/a-propos-de-bireme-lab",
+        "ressources/roadmap",
+        {
+          "group": "Changelog",
+          "icon": "list-check",
+          "pages": [
+            "changelog/dedale"
+          ]
+        },
+        "ressources/foire-aux-questions"
+      ]
+    },
+    {
+      "group": "Démarrage rapide",
+      "pages": [
+        "dedale/demarrage-rapide/creer-son-premier-modele"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
+        "dedale/introduction"
       ]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "dedale/endpoint/get",
+        "dedale/endpoint/create",
+        "dedale/endpoint/delete"
       ]
     }
   ],
