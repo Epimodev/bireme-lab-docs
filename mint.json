@@ -26,12 +26,12 @@
   "topbarLinks": [
     {
       "name": "Besoin d'aide ?",
-      "url": "mailto:support@bireme.io"
+      "url": "https://github.com/orgs/bireme-lab/discussions/categories/help"
     }
   ],
-  "versions": ["v1.0"],
+  "versions": ["v0.1.0-beta"],
   "topbarCtaButton": {
-    "name": "Rejoindre la bêta",
+    "name": "S'inscrire",
     "url": "https://bireme.io"
   },
   "tabs": [
@@ -47,10 +47,10 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "introduction"
+      "url": "bienvenue"
     },
     {
-      "name": "Mises à jour",
+      "name": "Changelog",
       "icon": "megaphone",
       "url": "changelog"
     },
@@ -64,14 +64,13 @@
     {
       "group": "Documentation",
       "pages": [
-        "introduction"
+        "bienvenue"
       ]
     },
     {
       "group": "Ressources",
       "pages": [
-        "ressources/a-propos-de-bireme-lab",
-        "ressources/roadmap",
+        "roadmap",
         {
           "group": "Changelog",
           "icon": "list-check",
@@ -79,27 +78,36 @@
             "changelog/dedale"
           ]
         },
-        "ressources/foire-aux-questions"
+        "foire-aux-questions"
       ]
     },
     {
-      "group": "Démarrage rapide",
+      "group": "Documentation",
       "pages": [
-        "dedale/demarrage-rapide/creer-son-premier-modele"
+        "dedale/introduction",
+        "dedale/concept",
+        "dedale/demarrage-rapide",
+        {
+          "group": "Cas d'usages",
+          "icon": "lightbulb",
+          "pages": [
+            "dedale/usages/emailing",
+            "dedale/usages/emails-transactionnels",
+            "dedale/usages/retargeting"
+          ]
+        },
+        "dedale/foire-aux-questions"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Intégrations",
       "pages": [
-        "dedale/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "dedale/endpoint/get",
-        "dedale/endpoint/create",
-        "dedale/endpoint/delete"
+        "dedale/integrations/mailchimp",
+        "dedale/integrations/hubspot",
+        "dedale/integrations/brevo",
+        "dedale/integrations/outlook",
+        "dedale/integrations/resend",
+        "dedale/integrations/clerk"
       ]
     }
   ],

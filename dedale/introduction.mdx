@@ -1,33 +1,110 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: Introduction
+icon: house
+description: Le moteur de génération de modèle(s) d'email(s) nouvelle génération
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+Dédale est un **service gratuit** dédié aux entreprises et aux individuels qui cherchent à créer, déveloper et organiser leurs modèles d'emails en toute simplicité.
 
-## Welcome
+## Démarrage rapide
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Pour bien commencer, vous pouvez explorer notre documentation en suivant les étapes de création d'un modèle d'email via Dédale
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+<CardGroup cols={3}>
+  <Card
+    title="Créer"
+    icon="circle-1"
+    href="/dedale/demarrage-rapide#etape-1-creer-mon-premier-modele-d-email"
+  >
+    Créer un nouveau modèle d'email avec Dédale.
+  </Card>
+  <Card
+    title="Prévisualiser"
+    icon="circle-2"
+    href="/dedale/demarrage-rapide#etape-2-ajouter-des-variables-et-previsualiser-mon-modele"
+  >
+    Prévisualiser un modèle avec des exemples en conditions réelles
+  </Card>
+  <Card
+    title="Exporter"
+    icon="circle-3"
+    href="/dedale/demarrage-rapide#etape-4-exporter-mon-modele-vers-mon-service-d-envoi-d-emails"
+  >
+    Intégrer un modèle dans un service comme Mailchimp
+  </Card>
+</CardGroup>
 
-## Authentication
+---
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+## Cas d'usages
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+Nous avons listé quelques cas d'usages dans lesquels l'usage de Dédale peut s'avérer utile
+
+<CardGroup cols={3}>
+  <Card
+    title="Emailing"
+    icon="megaphone"
+    href="/dedale/demarrage-rapide#etape-1-creer-mon-premier-modele-d-email"
+  >
+    Envoyer des emails vers une liste de diffusion
+  </Card>
+  <Card
+    title="Transactionnel"
+    icon="gear"
+    href="/dedale/demarrage-rapide#etape-2-ajouter-des-variables-et-previsualiser-mon-modele"
+  >
+    Envoyer un email automatisé déclenché par une action
+  </Card>
+  <Card
+    title="Retargeting"
+    icon="bullseye-pointer"
+    href="/dedale/demarrage-rapide#etape-4-exporter-mon-modele-vers-mon-service-d-envoi-d-emails"
+  >
+    Communication à visée commerciale pour convertir
+  </Card>
+</CardGroup>
+
+---
+
+## Intégrations
+
+Apprenez à importer vos modèles d'emails sur vos services 
+
+<CardGroup cols={2}>
+  <Card
+    title="Mailchimp"
+    href="/dedale/integrations/mailchimp"
+  >
+    Plateforme de services marketing diversifiés pour les PME
+  </Card>
+  <Card
+    title="Hubspot"
+    href="/dedale/integrations/hubspot"
+  >
+    Solutions CRM, marketing, service client et web muticanales
+  </Card>
+  <Card
+    title="Brevo (ex Sendinblue)"
+    href="/dedale/integrations/brevo"
+  >
+    Plateforme de communication et d’envoi d’email de masse
+  </Card>
+  <Card
+    title="Outlook"
+    href="/dedale/integrations/outlook"
+  >
+    Importez un modèle d'email dans vos communications internes et externes
+  </Card>
+  <Card
+    title="Resend"
+    href="/dedale/integrations/resend"
+  >
+    Le service d'envoi d'emails pour les développeurs
+  </Card>
+  <Card
+    title="Clerk"
+    href="/dedale/integrations/clerk"
+  >
+    Clerk est un service d'authentification et de gestion d'utilisateurs
+  </Card>
+</CardGroup>
