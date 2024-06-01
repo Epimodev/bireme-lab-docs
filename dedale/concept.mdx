@@ -1,6 +1,103 @@
 ---
-title: Concept et motivations
+title: Concept et fonctionnalités
 icon: bolt
-sidebarTitle: Concept et motivations
-description: Concept et motivations
+sidebarTitle: Concept et fonctionnalités
+description: Simplifier et rendre plus intuitive la création et l'usage de modèles d'e-mails
 ---
+
+Dédale est une application web accessible gratuitement, à l'adresse [dedale.bireme.io](https://dedale.bireme.io), qui simplifie la création de modèles d'e-mails.
+
+{/* Nous avons créé Dédale pour rendre plus intuitive la création de modèles d'après les constats suivants :
+- soit l'accès à un outil de création de modèle nécéssite de payer pour des fonctionnalités tiers, sous abonnement, comme la génération de site internet ou l'usage de fonctions CRM avancées, qui ne seront pas utilisés,
+- soit le service propose un **WYSIWYG**<sup>2</sup> limité qui permet de créer des modèles génériques,
+- soit la dépendance à un développeur pour créer le modèle et l'importer dans un outil est forte et nuit à l'indépendance des équipes non techniques. */}
+
+Avec Dédale, notre objectif est de fournir l'outil idéal pour aider les entreprises et les particuliers à construire une communication et une image de marque cohérente, tout en y consacrant le moins de temps possible.
+
+Nous visons à offrir une solution intuitive qui favorise la collaboration entre équipes techniques et non techniques, réduisant ainsi le temps nécessaire à l'intégration et à l'utilisation des e-mails comme canal de communication.
+
+## Centraliser les modèles d'e-mails
+
+Avec Dédale vous pouvez centraliser l'ensemble de vos modèles d'e-mails dans un seul et même outil et exporter facilement vers l'ensemble de vos services en fonction de vos différents [cas d'usages](/dedale/usages/e-mailing.mdx).
+
+Voici une liste non-exhaustive des avantages qu'apporte la centralisation sur Dédale :
+- **Éviter d'éparpiller les modèles dans plusieurs services différents :** il peut arriver d'éparpiller l'usage des modèles d'e-mails dans diverses applications (entre services d'e-mailing ou services d'authentification des utilisateurs par exemple) ce qui rend bien plus difficile la collaboration entre départements, le stockage*, l'archivage et la gestion quotidienne des modèles,
+- **Réduire la dépendance aux services :** ne pas créer son modèle via les solutions propriétaires intégrées des plateformes d'e-mailing permet de garantir la liberté d'utiliser le même modèle partout, sans dépendance, tout en gardant le contrôle sur l'ajout de modifications, même après résiliation. Cela facilite également la migration vers d'autres plateformes sans avoir besoin d'un développeur,
+- **Simplifier la collaboration :** puisque le développement et la prévisualisation est réalisable dans l'application, et que chaque département peut accéder à l'ensemble des modèles et faire un export sans compétence technique particulière,
+
+<Warning>
+
+*Sans création de compte, le stockage s'effectue dans les données de votre navigateur avec une limite fixée à 5 modèles maximum. En cas de nettoyage de l'historique ou des données de navigation, vous risquez de perdre votre travail.
+
+Vous pouvez [créer un compte gratuit](https://bireme.io) pour bénéficier du stockage permanent.
+
+</Warning>
+
+## Un environnement optimisé pour les développeurs
+
+Dédale intègre une version de [monaco-editor](https://microsoft.github.io/monaco-editor/) optimisé pour garantir une expérience adéquate aux développeurs avec :
+- **Une intégration complète avec TypeScript :** avec la prise en charge automatique des typages (modules externes compris)
+- **Une gestion automatique des dépendances externes :** vous pouvez importer n'importe quel composant disponible sur [NPM](https://www.npmjs.com/), Dédale s'occupe du téléchargement et de l'installation à votre place
+- **Une gestion et affichage des erreurs en prévisualisation :** intégration d'une gestion d'erreur dédiée au développement d'un modèle d'e-mail
+- **Une intégration [Can I e-mail?](https://www.canie-mail.com/) :** avec une détection automatique des propriétés `HTML` et `CSS` limités et peu supportés par les clients e-mails. **_Fonctionnalité en cours de développement_**
+
+<Info>
+
+L'application à été conçu à partir de la librairie [React e-mail](https://react.e-mail/) pour assurer une expérience de développement optimale en codant son e-mail en [TypeScript](https://www.typescriptlang.org/) et avec [React](https://react.dev/).
+
+[Lire la documentation de React e-mail pour en apprendre davantage](https://react.e-mail/docs/introduction)
+
+</Info>
+
+## Une prévisualisation en conditions réelles
+
+Dédale inclut une fonctionnalité de prévisualisation avancée qui permet de tester votre modèle d'e-mail dans des conditions réelles. Cette fonctionnalité est conçue pour garantir que vos e-mails s'afficheront correctement sur les principaux clients e-mail et appareils, en tenant compte des comportements spécifiques de chaque client.
+
+Simulez l'affichage de vos e-mails dans les principaux clients comme Gmail, Outlook, Yahoo Mail, et Apple Mail. Cela vous permet de vérifier et corriger les problèmes de mise en page avant l'envoi.
+
+Chaque client e-mail interprète le code différemment, Dédale prend en compte ces spécificités.
+
+Enfin ajustez la fenêtre de prévisualisation pour simuler l'affichage sur différents appareils (smartphones, tablettes, ordinateurs). Cela garantit que vos e-mails s'adaptent à tous les types d'écrans pour une expérience utilisateur optimale.
+
+## Une intégration facile et rapide
+
+Exportez vos modèles en HTML, un format compatible avec la majorité des services professionnels existants. Cela assure une intégration fluide avec vos outils d'e-mailing habituels sans nécessiter de conversion ou d'adaptation supplémentaires.
+
+**Tutoriels et documentation**
+
+Bénéficiez d'une documentation détaillée et de tutoriels pour vous guider dans l'intégration de Dédale avec vos outils et processus existants :
+
+- [Mailchimp](/dedale/integrations/mailchimp)
+- [Hubspot](/dedale/integrations/hubspot)
+- [Brevo](/dedale/integrations/brevo)
+- [Outlook](/dedale/integrations/outlook)
+- [Resend](/dedale/integrations/resend)
+- [Clerk](/dedale/integrations/clerk)
+
+## Des fonctionnalités inédites
+
+Nous avons pour objectif d'intégrer des fonctionnalités innovantes afin de faire de Dédale l'outil le plus complet et efficace pour la création de modèles d'e-mails. Voici quelques-unes des idées que nous envisageons d'ajouter :
+
+**Collaboration améliorée**
+
+- **Commentaires en temps réel :** Pour permettre à votre équipe de laisser des commentaires directement sur les modèles d'e-mail afin de faciliter les retours et les modifications.
+- **Gestion des versions:** Suivez l'historique des modifications apportées à vos modèles, avec la possibilité de revenir à une version précédente si nécessaire.
+
+**Prévisualisation avancée**
+
+- **Prévisualisation multi-appareils en temps réel :** Testez vos modèles sur différents appareils simultanément (smartphones, tablettes, ordinateurs) pour assurer une compatibilité optimale.
+- **Simulateur de clients e-mail :** Utilisez un simulateur intégré pour visualiser et tester vos e-mails sur les principaux clients e-mail (Gmail, Outlook, Yahoo Mail, Apple Mail) avec leurs comportements spécifiques.
+
+**Sécurité et conformité**
+
+- **Vérification de conformité :** Assurez-vous que vos modèles respectent les réglementations en vigueur (RGPD, CAN-SPAM) grâce à des outils de vérification intégrés.
+- **Protection contre le phishing :** Utilisez des outils intégrés pour analyser et renforcer la sécurité de vos e-mails, réduisant ainsi les risques de phishing.
+
+**Intégrations supplémentaires**
+
+- **Marketplace de thèmes :** Accédez à une marketplace où vous pouvez trouver et utiliser une multitude de thèmes.
+- **Intégration avec CRM :** Connectez Dédale à votre CRM pour synchroniser les données des clients et personnaliser vos campagnes d'e-mailing de manière plus efficace.
+
+Et bien plus encore !
+
+Si vous avez des idées et/ou des remarques qui pourraient nous aider à améliorer Dédale vous pouvez faire une [demande de fonctionnalité via notre canal dédié](https://github.com/orgs/bireme-lab/discussions/new?category=ideas).
