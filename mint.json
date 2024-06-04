@@ -86,7 +86,6 @@
       "pages": [
         "dedale/introduction",
         "dedale/concept",
-        "dedale/demarrage-rapide",
         {
           "group": "Cas d'usages",
           "icon": "lightbulb",
@@ -100,6 +99,17 @@
       ]
     },
     {
+      "group": "Démarrage rapide",
+      "pages": [
+        "dedale/demarrage-rapide/interface",
+        "dedale/demarrage-rapide/creer-un-modele",
+        "dedale/demarrage-rapide/editer-le-code",
+        "dedale/demarrage-rapide/variables",
+        "dedale/demarrage-rapide/envoyer-un-test",
+        "dedale/demarrage-rapide/exporter"
+      ]
+    },
+    {
       "group": "Intégrations",
       "pages": [
         "dedale/integrations/mailchimp",
@@ -108,6 +118,12 @@
         "dedale/integrations/outlook",
         "dedale/integrations/resend",
         "dedale/integrations/clerk"
+      ]
+    },
+    {
+      "group": "API",
+      "pages": [
+        "dedale/api/add-variables"
       ]
     }
   ],

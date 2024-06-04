@@ -1,0 +1,52 @@
+---
+title: AddVariables
+description: Fonction qui permet l'ajout de variables dans le modèle d'email
+---
+
+## Démarrer
+
+Ajoutez la fonction suivant en bas de votre modèle d'e-mail
+
+```tsx
+addVariables(Untitled, {
+  title: {
+    label: "Titre",
+    defaultValue: "Untitled",
+    placeholder: "Title",
+  },
+})
+```
+
+## Props
+
+<ResponseField name="label" type="string" required>
+  Label de la variable affiché sur l'interface d'édition
+</ResponseField>
+
+<ResponseField name="type" type="Variable Type">
+  <Expandable title="properties">
+    <ResponseField name="string" type="string">
+      The full name of the user
+    </ResponseField>
+
+    <ResponseField name="email" type="string">
+      Whether the user is over 21 years old
+    </ResponseField>
+
+    <ResponseField name="url" type="string">
+      Whether the user is over 21 years old
+    </ResponseField>
+
+    <ResponseField name="phone_number" type="string">
+      Whether the user is over 21 years old
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="defaultValue" type="string">
+  Specify the target attribute for the button link
+</ResponseField>
+
+<ResponseField name="placeholder" type="string">
+  Specify the target attribute for the button link
+</ResponseField>
