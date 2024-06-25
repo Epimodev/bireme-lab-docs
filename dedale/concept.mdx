@@ -1,92 +1,64 @@
 ---
-title: Concept et fonctionnalités
+title: Concept and features
 icon: bolt
-sidebarTitle: Concept et fonctionnalités
-description: Simplifier et rendre plus intuitive la création et l'usage de modèles d'e-mails
+sidebarTitle: Concept and features
+description: Simplify and make more intuitive the creation and use of e-mail templates
 ---
 
-Dédale est une application web accessible gratuitement, à l'adresse [dedale.bireme.io](https://dedale.bireme.io), qui simplifie la création de modèles d'e-mails.
+Dédale is a free web application available at [dedale.bireme.io](https://dedale.bireme.io), which simplifies the creation of mail templates.
 
 {/* Nous avons créé Dédale pour rendre plus intuitive la création de modèles d'après les constats suivants :
 - soit l'accès à un outil de création de modèle nécéssite de payer pour des fonctionnalités tiers, sous abonnement, comme la génération de site internet ou l'usage de fonctions CRM avancées, qui ne seront pas utilisés,
 - soit le service propose un **WYSIWYG**<sup>2</sup> limité qui permet de créer des modèles génériques,
 - soit la dépendance à un développeur pour créer le modèle et l'importer dans un outil est forte et nuit à l'indépendance des équipes non techniques. */}
 
-Avec Dédale, notre objectif est de fournir l'outil idéal pour aider les entreprises et les particuliers à construire une communication par e-mail avec une image de marque cohérente, tout en y consacrant le moins de temps possible.
+With Dédale, our aim is to provide the ideal tool to help companies and individuals build email communications with a consistent brand image, while spending as little time on it as possible.
 
-Nous visons à offrir une solution intuitive qui favorise la collaboration entre équipes techniques et non techniques, réduisant ainsi le temps nécessaire à l'intégration et à l'utilisation des e-mails comme canal de communication.
+We aim to offer an intuitive solution that encourages best practices usage and reducing the time needed to develop and use mailing as a communication channel.
 
-## Centraliser les modèles d'e-mails
+## Centralize mail templates
 
-Avec Dédale vous pouvez centraliser l'ensemble de vos modèles d'e-mails dans un seul et même outil et exporter facilement vers l'ensemble de vos services en fonction de vos différents [cas d'usages](/dedale/usages/e-mailing.mdx).
+With Dédale, you can centralize all your mail templates in a single tool and easily export them to all your services according to your different [use cases](/dedale/usages/e-mailing.mdx).
 
-Voici une liste non-exhaustive des avantages qu'apporte la centralisation sur Dédale :
-- **Éviter d'éparpiller les modèles dans plusieurs services différents :** il peut arriver d'éparpiller l'usage des modèles d'e-mails dans diverses applications (entre services d'e-mailing ou services d'authentification des utilisateurs par exemple) ce qui rend bien plus difficile la collaboration entre départements, le stockage*, l'archivage et la gestion quotidienne des modèles,
-- **Réduire la dépendance aux services :** ne pas créer son modèle via les solutions propriétaires intégrées des plateformes d'e-mailing permet de garantir la liberté d'utiliser le même modèle partout, sans dépendance, tout en gardant le contrôle sur l'ajout de modifications, même après résiliation. Cela facilite également la migration vers d'autres plateformes sans avoir besoin d'un développeur,
-- **Simplifier la collaboration :** puisque le développement et la prévisualisation est réalisable dans l'application, et que chaque département peut accéder à l'ensemble des modèles et faire un export sans compétence technique particulière,
+Here is a non-exhaustive list of the advantages of centralizing on Dédale:
+- **Avoid scattering templates across several different services:** It can happen that mail templates are used in different applications (between mailing services or user authentication services, for example), making inter-departmental collaboration, storage*, archiving and day-to-day template management much more difficult,
+- **Reducing dependency on services:** Not creating your own template via the integrated proprietary solutions of mailing platforms guarantees the freedom to use the same template everywhere, without dependency, while retaining control over the addition of modifications, even after termination. It also facilitates migration to other platforms without the need for a developer,
+- **Simplify collaboration:** since development and preview can be carried out within the application, and each department can access all the models and export them without any special technical skills,
 
 <Warning>
 
-*Sans création de compte, le stockage s'effectue dans les données de votre navigateur avec une limite fixée à 5 modèles maximum. En cas de nettoyage de l'historique ou des données de navigation, vous risquez de perdre votre travail.
+*Without creating an account, storage is carried out in your browser's data, with a maximum limit (1 template max.). If you clean your history or browsing data, you risk losing your work.
 
-Vous pouvez [créer un compte gratuit](https://bireme.io) pour bénéficier du stockage permanent.
+You can [create a free account](https://bireme.io) to benefit from permanent storage.
 
 </Warning>
 
-## Un environnement optimisé pour les développeurs
+## An optimized environment for developers
 
-Dédale garanti une expérience adéquate aux développeurs avec :
-- **Une intégration complète avec TypeScript :** avec la prise en charge automatique des typages (modules externes compris)
-- **Une gestion automatique des dépendances externes :** vous pouvez importer n'importe quel composant disponible sur [NPM](https://www.npmjs.com/), Dédale s'occupe du téléchargement et de l'installation à votre place
-- **Une gestion et affichage des erreurs en prévisualisation :** intégration d'une gestion d'erreur dédiée au développement d'un modèle d'e-mail
-- **Une intégration [Can I e-mail?](https://www.canie-mail.com/) :** avec une détection automatique des propriétés `HTML` et `CSS` limités et peu supportés par les clients e-mails. **_Fonctionnalité en cours de développement_**
+Dédale guarantees the right experience for developers with :
+- **Full integration with TypeScript:** with automatic typing support (including plugins)
+- **Automatic management of external dependencies:** you can import any component available on [NPM](https://www.npmjs.com/), and Dédale will take care of downloading and installing it for you.
+- **Error handling and display in preview:** integration of a dedicated error handling system for mail template development
+- **[Can I e-mail?](https://www.canie-mail.com/) integration:** with automatic detection of `HTML` and `CSS` properties that are limited and poorly supported by e-mail clients. **Feature under development_**.
 
 <Info>
 
-L'application à été conçu à partir de la librairie [React e-mail](https://react.e-mail/) pour assurer une expérience de développement optimale en codant son e-mail en [TypeScript](https://www.typescriptlang.org/) et avec [React](https://react.dev/).
+The application was designed using the [React Email](https://react.email/) library to ensure an optimal development experience by coding its e-mail in [TypeScript](https://www.typescriptlang.org/) and with [React](https://react.dev/).
 
-[Lire la documentation de React e-mail pour en apprendre davantage](https://react.e-mail/docs/introduction)
+[Read the React Email documentation to learn more](https://react.e-mail/docs/introduction)
 
 </Info>
 
-## Une prévisualisation en conditions réelles
+## A preview in real-life conditions
 
-Dédale inclut une fonctionnalité de prévisualisation avancée qui permet de tester votre modèle d'e-mail dans des conditions réelles. Cette fonctionnalité est conçue pour garantir que vos e-mails s'afficheront correctement sur les principaux clients e-mail et appareils, en tenant compte des comportements spécifiques de chaque client.
+Dédale includes an advanced preview feature that lets you test your email template in real-life conditions. This feature is designed to ensure that your emails will display correctly on all major clients and devices.
 
-Simulez l'affichage de vos e-mails dans les principaux clients comme Gmail, Outlook, Yahoo Mail, et Apple Mail. Cela vous permet de vérifier et corriger les problèmes de mise en page avant l'envoi.
+Dédale is also providing an unique variables system to let you write template strings inside you template and still preview them as what you would have as final result in your recipients mail clients. [Learn more on how the variables system is working](/dedale/getting-started/variables)
 
-Chaque client e-mail interprète le code différemment, Dédale prend en compte ces spécificités.
+Finaly, adjust the preview window to simulate the display on different devices (smartphones, tablets, computers). This ensures that your emails adapt to all screen types for an optimal user experience.
 
-Enfin ajustez la fenêtre de prévisualisation pour simuler l'affichage sur différents appareils (smartphones, tablettes, ordinateurs). Cela garantit que vos e-mails s'adaptent à tous les types d'écrans pour une expérience utilisateur optimale.
+## Integrates easily within your current workflow
 
-## Une intégration facile et rapide
+Export your templates in `HTML`, a format compatible with the majority of existing professional services. This ensures seamless integration with your usual mailing tools without the need for additional conversion or adaptation.
 
-Exportez vos modèles en HTML, un format compatible avec la majorité des services professionnels existants. Cela assure une intégration fluide avec vos outils d'e-mailing habituels sans nécessiter de conversion ou d'adaptation supplémentaires.
-
-## Des fonctionnalités inédites
-
-Nous avons pour objectif d'intégrer des fonctionnalités innovantes afin de faire de Dédale l'outil le plus complet et efficace pour la création de modèles d'e-mails. Voici quelques-unes des idées que nous envisageons d'ajouter :
-
-**Collaboration améliorée**
-
-- **Commentaires en temps réel :** Pour permettre à votre équipe de laisser des commentaires directement sur les modèles d'e-mail afin de faciliter les retours et les modifications.
-- **Gestion des versions:** Suivez l'historique des modifications apportées à vos modèles, avec la possibilité de revenir à une version précédente si nécessaire.
-
-**Prévisualisation avancée**
-
-- **Prévisualisation multi-appareils en temps réel :** Testez vos modèles sur différents appareils simultanément (smartphones, tablettes, ordinateurs) pour assurer une compatibilité optimale.
-- **Simulateur de clients e-mail :** Utilisez un simulateur intégré pour visualiser et tester vos e-mails sur les principaux clients e-mail (Gmail, Outlook, Yahoo Mail, Apple Mail) avec leurs comportements spécifiques.
-
-**Sécurité et conformité**
-
-- **Vérification de conformité :** Assurez-vous que vos modèles respectent les réglementations en vigueur (RGPD, CAN-SPAM) grâce à des outils de vérification intégrés.
-- **Protection contre le phishing :** Utilisez des outils intégrés pour analyser et renforcer la sécurité de vos e-mails, réduisant ainsi les risques de phishing.
-
-**Intégrations supplémentaires**
-
-- **Marketplace de thèmes :** Accédez à une marketplace où vous pouvez trouver et utiliser une multitude de thèmes.
-- **Intégration avec CRM :** Connectez Dédale à votre CRM pour synchroniser les données des clients et personnaliser vos campagnes d'e-mailing de manière plus efficace.
-
-Et bien plus encore !
-
-Si vous avez des idées et/ou des remarques qui pourraient nous aider à améliorer Dédale vous pouvez faire une [demande de fonctionnalité via notre canal dédié](https://github.com/orgs/bireme-lab/discussions/new?category=ideas).
+If you have ideas and/or comments that could help us improve Daedalus, you can make a [feature request via our dedicated channel](https://github.com/orgs/bireme-lab/discussions/new?category=ideas).

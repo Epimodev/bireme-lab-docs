@@ -25,13 +25,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Besoin d'aide ?",
+      "name": "Need help?",
       "url": "https://github.com/orgs/bireme-lab/discussions/categories/help"
     }
   ],
-  "versions": ["Français", "English"],
+  "versions": ["v0.1.0-beta"],
   "topbarCtaButton": {
-    "name": "S'inscrire",
+    "name": "Subscribe for free",
     "url": "https://bireme.io"
   },
   "tabs": [
@@ -41,7 +41,7 @@
     }
   ],
   "primaryTab": {
-    "name": "Accueil"
+    "name": "Home"
   },
   "anchors": [
     {
@@ -64,7 +64,7 @@
     {
       "group": "Documentation",
       "pages": [
-        "bienvenue"
+        "welcome"
       ]
     },
     {
@@ -78,7 +78,7 @@
             "changelog/dedale"
           ]
         },
-        "foire-aux-questions"
+        "frequently-asked-questions"
       ]
     },
     {
@@ -87,26 +87,26 @@
         "dedale/introduction",
         "dedale/concept",
         {
-          "group": "Cas d'usages",
+          "group": "Use cases",
           "icon": "lightbulb",
           "pages": [
-            "dedale/usages/e-mailing",
-            "dedale/usages/e-mails-transactionnels",
-            "dedale/usages/retargeting"
+            "dedale/use-cases/mailing",
+            "dedale/use-cases/transactional-mail",
+            "dedale/use-cases/retargeting"
           ]
         },
-        "dedale/foire-aux-questions"
+        "dedale/frequently-asked-questions"
       ]
     },
     {
-      "group": "Démarrage rapide",
+      "group": "Getting started",
       "pages": [
-        "dedale/demarrage-rapide/interface",
-        "dedale/demarrage-rapide/creer-un-modele",
-        "dedale/demarrage-rapide/editer-le-code",
-        "dedale/demarrage-rapide/variables",
-        "dedale/demarrage-rapide/envoyer-un-test",
-        "dedale/demarrage-rapide/exporter"
+        "dedale/getting-started/interface",
+        "dedale/getting-started/create-a-template",
+        "dedale/getting-started/edit-code",
+        "dedale/getting-started/variables",
+        "dedale/getting-started/send-a-test",
+        "dedale/getting-started/export"
       ]
     },
     {
@@ -118,7 +118,6 @@
   ],
   "footerSocials": {
     "x": "https://x.com/biremelab",
-    "github": "https://github.com/bireme-lab",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/bireme-lab"
   }
 }
