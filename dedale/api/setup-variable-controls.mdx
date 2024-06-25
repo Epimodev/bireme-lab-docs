@@ -1,5 +1,5 @@
 ---
-title: AddVariables
+title: setupVariableControls
 description: Fonction qui permet l'ajout de variables dans le modèle d'email
 ---
 
@@ -8,7 +8,7 @@ description: Fonction qui permet l'ajout de variables dans le modèle d'email
 Ajoutez la fonction suivant en bas de votre modèle d'e-mail
 
 ```tsx
-addVariables(Untitled, {
+setupVariableControls(Untitled, {
   title: {
     label: "Titre",
     defaultValue: "Untitled",
@@ -23,24 +23,8 @@ addVariables(Untitled, {
   Label de la variable affiché sur l'interface d'édition
 </ResponseField>
 
-<ResponseField name="type" type="Variable Type">
-  <Expandable title="properties">
-    <ResponseField name="string" type="string">
-      The full name of the user
-    </ResponseField>
-
-    <ResponseField name="email" type="string">
-      Whether the user is over 21 years old
-    </ResponseField>
-
-    <ResponseField name="url" type="string">
-      Whether the user is over 21 years old
-    </ResponseField>
-
-    <ResponseField name="phone_number" type="string">
-      Whether the user is over 21 years old
-    </ResponseField>
-  </Expandable>
+<ResponseField name="type" type="enum">
+  Type
 </ResponseField>
 
 <ResponseField name="defaultValue" type="string">

@@ -29,7 +29,7 @@
       "url": "https://github.com/orgs/bireme-lab/discussions/categories/help"
     }
   ],
-  "versions": ["v0.1.0-beta"],
+  "versions": ["Français", "English"],
   "topbarCtaButton": {
     "name": "S'inscrire",
     "url": "https://bireme.io"
@@ -110,20 +110,9 @@
       ]
     },
     {
-      "group": "Intégrations",
-      "pages": [
-        "dedale/integrations/mailchimp",
-        "dedale/integrations/hubspot",
-        "dedale/integrations/brevo",
-        "dedale/integrations/outlook",
-        "dedale/integrations/resend",
-        "dedale/integrations/clerk"
-      ]
-    },
-    {
       "group": "API",
       "pages": [
-        "dedale/api/add-variables"
+        "dedale/api/setup-variable-controls"
       ]
     }
   ],
