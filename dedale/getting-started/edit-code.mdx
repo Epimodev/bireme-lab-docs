@@ -11,30 +11,3 @@ Everything to do with model development is based on [React](https://react.dev), 
 
 We invite you to browse [the React Email documentation](https://react.email/docs) to learn more about developing an e-mail template with React and TypeScript.
 
-## Add variables in code
-
-To start with variables you will need to setup variable controls within your template code, like the following:
-
-```tsx
-setupVariableControls(Untitled, {
-  inviterName: {
-    label: "Inviter name",
-    type: "fullName",
-    placeholder: "Antoine",
-    description: "Person who send the invitation",
-  },
-  organisationName: {
-    label: "Organization",
-    type: "companyName",
-    placeholder: "Space X",
-  },
-  year: {
-    label: "Year",
-    type: "any",
-    defaultValue: new Date().getFullYear().toString(),
-  },
-});
-```
-
-To learn more about `setupVariableControls` you can learn the [dedicated API documentation](/dedale/api/setup-variable-controls)
-
