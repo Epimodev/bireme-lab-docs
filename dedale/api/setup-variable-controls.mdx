@@ -23,8 +23,18 @@ setupVariableControls(Untitled, {
   Label de la variable affiché sur l'interface d'édition
 </ResponseField>
 
-<ResponseField name="type" type="enum">
-  Type
+<ResponseField name="type" type="string" required>
+  Type of variable used only to generate random values for preview mode.  
+  You can use one of those value:
+  - any
+  - companyName
+  - fullName
+  - mailAddress
+  - phoneNumber
+  - postalAddress
+  - url
+  - date
+  - time
 </ResponseField>
 
 <ResponseField name="defaultValue" type="string">
