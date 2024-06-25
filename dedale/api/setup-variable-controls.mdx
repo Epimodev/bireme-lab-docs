@@ -1,26 +1,47 @@
 ---
 title: setupVariableControls
-description: Fonction qui permet l'ajout de variables dans le modèle d'email
+description: Make your template variables editable from a dedicated panel
 ---
 
-## Démarrer
+## Make variables editable
 
-Ajoutez la fonction suivant en bas de votre modèle d'e-mail
+Dedale gives the possibility to replace variables by real data to preview your template.  
+To be able to make react Props editable from variables panel, you have to use `setupVariableControls` like this:
 
 ```tsx
-setupVariableControls(Untitled, {
-  title: {
-    label: "Titre",
-    defaultValue: "Untitled",
-    placeholder: "Title",
+import { /* Components needed for my template */ } from "@react-email/components";
+import React from "react";
+import { setupVariableControls } from "@bireme-lab/dedale";
+
+type Props = {
+  name: string
+}
+
+const MyTemplate: React.FC<Props> = ({ name }) => {
+  // My template code
+}
+
+setupVariableControls(MyTemplate, {
+  name: {
+    label: "Name",
+    type: "fullName",
+    placeholder: "Antoine",
+    defaultValue: "Antoine",
+    description: "User name",
   },
 })
+
+export default MyTemplate
 ```
 
-## Props
+Once you saved the template, you can open variables panel to generate ramdom values or edit manually variable.
+
+{/* TODO SCREENSHOT */}
+
+## Parameters
 
 <ResponseField name="label" type="string" required>
-  Label de la variable affiché sur l'interface d'édition
+  Label displayed above the input in variable panel
 </ResponseField>
 
 <ResponseField name="type" type="string" required>
@@ -38,9 +59,13 @@ setupVariableControls(Untitled, {
 </ResponseField>
 
 <ResponseField name="defaultValue" type="string">
-  Specify the target attribute for the button link
+  Value displayed in preview if the input is empty in variable panel.
 </ResponseField>
 
 <ResponseField name="placeholder" type="string">
-  Specify the target attribute for the button link
+  Input placeholder in variable panel
+</ResponseField>
+
+<ResponseField name="description" type="string">
+  Small description displayed below input
 </ResponseField>
