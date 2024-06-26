@@ -3,43 +3,6 @@ title: setupVariableControls
 description: Make your template variables editable from a dedicated panel
 ---
 
-## Make variables editable
-
-Dedale gives the possibility to replace variables by real data to preview your template.  
-To be able to make react Props editable from variables panel, you have to use `setupVariableControls` like this:
-
-```tsx
-import { /* Components needed for my template */ } from "@react-email/components";
-import React from "react";
-import { setupVariableControls } from "@bireme-lab/dedale";
-
-type Props = {
-  name: string
-}
-
-const MyTemplate: React.FC<Props> = ({ name }) => {
-  // My template code
-}
-
-setupVariableControls(MyTemplate, {
-  name: {
-    label: "Name",
-    type: "fullName",
-    placeholder: "Antoine",
-    defaultValue: "Antoine",
-    description: "User name",
-  },
-})
-
-export default MyTemplate
-```
-
-Once you saved the template, you can open variables panel to generate ramdom values or edit manually variable.
-
-{/* TODO SCREENSHOT */}
-
-## Parameters
-
 <ResponseField name="label" type="string" required>
   Label displayed above the input in variable panel
 </ResponseField>

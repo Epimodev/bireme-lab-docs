@@ -5,22 +5,51 @@ sidebarTitle: Use variables
 description: Manipulate variables using the variables panel
 ---
 
-## Add variables in code
+## Make variables editable
 
-To start with variables you will need to setup variable controls within your template code, like the following:
+Dedale gives the possibility to replace variables by real data to preview your template.  
+To be able to make react Props editable from variables panel, you have to use `setupVariableControls` like this:
 
 ```tsx
-setupVariableControls(Untitled, {
-  inviterName: {
-    label: "Title",
-    type: "companyName",
-    placeholder: "This is title",
-    description: "Person who send the invitation",
+import { /* Components needed for my template */ } from "@react-email/components";
+import React from "react";
+import { setupVariableControls } from "@bireme-lab/dedale";
+
+type Props = {
+  name: string
+}
+
+const MyTemplate: React.FC<Props> = ({ name }) => {
+  // My template code
+}
+
+setupVariableControls(MyTemplate, {
+  name: {
+    label: "Name",
+    type: "fullName",
+    placeholder: "Antoine",
+    defaultValue: "Antoine",
+    description: "User name",
   },
-});
+})
+
+export default MyTemplate
 ```
 
+<Info>
+
 To learn more about `setupVariableControls` you can learn the [dedicated API documentation](/dedale/api/setup-variable-controls)
+
+</Info>
+
+<Warning>
+
+Ensure React component's `props` are matching configured variables otherwise TypeScript will raise an issue
+
+</Warning>
+
+Once you saved the template, you can open variables panel to generate ramdom values or edit manually variable.
+
 
 ## Usage of variables panel to change values
 
@@ -30,7 +59,7 @@ To learn more about `setupVariableControls` you can learn the [dedicated API doc
   alt="Variables panel"
 />
 
-**A:** Generate random value for all fields. [Learn more about how it works in API reference](/dedale//api/setup-variable-controls)  
+**A:** Generate random value for all fields. [Learn more about how it works in API reference](/dedale/api/setup-variable-controls)  
 **B:** Corresponding to `label` in `setupVariableControls`  
 **C:** Corresponding to `description` in `setupVariableControls`  
 **D:** Input to modify variable value  
