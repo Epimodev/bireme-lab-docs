@@ -2,7 +2,7 @@
 title: Add and use variables
 icon: pen-to-square
 sidebarTitle: Use variables
-description: Manipulate added variables using the variables panel
+description: Manipulate variables using the variables panel
 ---
 
 ## Add variables in code
@@ -12,20 +12,10 @@ To start with variables you will need to setup variable controls within your tem
 ```tsx
 setupVariableControls(Untitled, {
   inviterName: {
-    label: "Inviter name",
-    type: "fullName",
-    placeholder: "Antoine",
-    description: "Person who send the invitation",
-  },
-  organisationName: {
-    label: "Organization",
+    label: "Title",
     type: "companyName",
-    placeholder: "Space X",
-  },
-  year: {
-    label: "Year",
-    type: "any",
-    defaultValue: new Date().getFullYear().toString(),
+    placeholder: "This is title",
+    description: "Person who send the invitation",
   },
 });
 ```
@@ -42,5 +32,5 @@ To learn more about `setupVariableControls` you can learn the [dedicated API doc
 
 **A:** Generate random value for all fields. [Learn more about how it works in API reference](/dedale//api/setup-variable-controls)  
 **B:** Corresponding to `label` in `setupVariableControls`  
-**C:** Input to modify variable value  
-**D:** Corresponding to `description` in `setupVariableControls`  
+**C:** Corresponding to `description` in `setupVariableControls`  
+**D:** Input to modify variable value  
